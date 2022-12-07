@@ -15,7 +15,7 @@ export const plantList = [
 		name: 'pothos argenté',
 		category: 'classique',
 		id: '3sd',
-		isBestSale: true
+		isBestSale: null
 	},
 	{
 		name: 'yucca',

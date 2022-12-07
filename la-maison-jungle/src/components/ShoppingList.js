@@ -1,5 +1,7 @@
 //Importer le fichier avec la liste de données et pour le traitement en faire une variable
 import { plantList } from '../datas/plantList.js'
+//importer le style CSS
+import '../styles/ShoppingList.css'
 
 /** Pour chaque élement dans la const PlantList, créer un élément li de la liste à puce ul cela en parcourant la liste avec la méthode map()
  * key : paramètre unique et à valeur stable dans le temps; ici créer avec une string et la combiner avec l'index de la data dans votre tableau map().
