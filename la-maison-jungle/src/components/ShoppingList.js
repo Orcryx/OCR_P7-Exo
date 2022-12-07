@@ -20,9 +20,9 @@ function ShoppingList(){
 					<li key={cat}>{cat}</li>
 				))}
 			</ul>
-			<ul>
+			<ul className='lmj-plant-list'>
 				{plantList.map((plant) => (
-					<li key={plant.id}>{plant.name}{plant.isBestSale ? <span>🔥</span> : null}</li>
+					<li key={plant.id} className='lmj-plant-item'>{plant.name}{plant.isBestSale ? <span>🔥</span> : null}</li>
 				))}
 			</ul>
 		</div>
