@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 //Importer un composant
 import Recommendation from './Recommendation';
 
+
 function Banner(){
     return (<div className='lmj-banner'>
                 <div className='lmj-banner-row'>
@@ -12,6 +13,7 @@ function Banner(){
                     <h1 className='lmj-title'>La maison jungle</h1>
                 </div>
                <Recommendation />
+               
             </div>)
 }
 //Il s'agit d'une syntaxe prévue dans l'ES6, qui vous épargnera d'utiliser les accolades au moment de l'import. 

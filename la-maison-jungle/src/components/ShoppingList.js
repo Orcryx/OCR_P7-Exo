@@ -3,6 +3,7 @@ import { plantList } from '../datas/plantList.js'
 //importer le style CSS
 import '../styles/ShoppingList.css'
 
+
 /** Pour chaque élement dans la const PlantList, créer un élément li de la liste à puce ul cela en parcourant la liste avec la méthode map()
  * key : paramètre unique et à valeur stable dans le temps; ici créer avec une string et la combiner avec l'index de la data dans votre tableau map().
  */
@@ -22,7 +23,10 @@ function ShoppingList(){
 			</ul>
 			<ul className='lmj-plant-list'>
 				{plantList.map((plant) => (
-					<li key={plant.id} className='lmj-plant-item'>{plant.name}{plant.isBestSale ? <span>🔥</span> : null}</li>
+					<li key={plant.id} className='lmj-plant-item'>
+						{plant.name}{plant.isBestSale ? <span>🔥</span> : null}
+						{plant.isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
+					</li>
 				))}
 			</ul>
 		</div>
