@@ -1,3 +1,6 @@
+//Importer l'image dans le dossier asset
+import monstera from '../assets/monstera.jpg'
+
 export const plantList = [
 	{
 		name: 'monstera',
@@ -6,7 +9,8 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : true,
 		water:3,
-		light:1
+		light:1,
+		cover: monstera
 	},
 	{
 		name: 'ficus lyrata',
@@ -15,7 +19,8 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : false,
 		water:2,
-		light:1
+		light:1,
+		cover: monstera
 	},
 	{
 		name: 'pothos argenté',
@@ -24,7 +29,8 @@ export const plantList = [
 		isBestSale: null,
 		isSpecialOffer : true,
 		water:2,
-		light:2
+		light:2,
+		cover: monstera
 	},
 	{
 		name: 'yucca',
@@ -33,7 +39,8 @@ export const plantList = [
 		isBestSale: false,
 		isSpecialOffer : true,
 		water:2,
-		light:3
+		light:3,
+		cover: monstera
 	},
 	{
 		name: 'olivier',
@@ -42,7 +49,8 @@ export const plantList = [
 		isBestSale: false,
 		isSpecialOffer : true,
 		water:1,
-		light:3
+		light:3,
+		cover: monstera
 	},
 	{
 		name: 'géranium',
@@ -51,7 +59,8 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : false,
 		water:2,
-		light:1
+		light:1,
+		cover: monstera
 	},
 	{
 		name: 'basilique',
@@ -60,7 +69,8 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : true,
 		water:1,
-		light:2
+		light:2,
+		cover: monstera
 	},
 	{
 		name: 'aloe',
@@ -69,7 +79,8 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : false,
 		water:1,
-		light:3
+		light:3,
+		cover: monstera
 	},
 	{
 		name: 'succulente',
@@ -78,6 +89,7 @@ export const plantList = [
 		isBestSale: true,
 		isSpecialOffer : false,
 		water:1,
-		light:2
+		light:2,
+		cover: monstera
 	}
 ]
