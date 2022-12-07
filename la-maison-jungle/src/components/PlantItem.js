@@ -3,8 +3,9 @@ import '../styles/PlantItem.css'
 //importer un composant 
 import CareScale from './CareScale'
 
-function handleClick(plantName){
-    console.log(plantName);
+function handleClick(e){
+    // console.log(plantName);
+    console.log('ceci est mon évènement', e);
     //alert(`Vous voulez acheter 1 ${plantName} ?`)
 }
 
