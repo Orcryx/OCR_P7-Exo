@@ -6,7 +6,7 @@
 	max-width: 800px;
 }
 
-.lmj-plant-item {
+/* .lmj-plant-item {
 	border: solid 2px black;
 	border-radius: 10px;
 	height: 150px;
@@ -17,9 +17,9 @@
 	justify-content: center;
 	flex-direction: column;
 	position: relative;
-}
+} */
 
-.lmj-sales {
+/* .lmj-sales {
 	position: absolute;
 	right: 0px;
 	top: 10px;
@@ -27,4 +27,4 @@
 	color: white;
 	padding: 5px 10px;
 	background-color: #31b572;
-}
+} */
