@@ -3,6 +3,7 @@ import Banner from './Banner';
 import ShoppingList from './ShoppingList';
 import QuestionForm from './QuestionForm'
 import Footer from './Footer'
+import Cart from './Cart';
 //Importer image de assets
 import logo from '../assets/logo.png'
 //Importer le style CSS du fichier
@@ -15,7 +16,7 @@ function App() {
       <img src={logo} alt='La maison jungle' className='lmj-logo' />
       <h1 className='lmj-title'>La maison jungle</h1>
     </Banner>
-    {/* <Cart/> */}
+    <Cart/>
     <ShoppingList/>
     <QuestionForm/>
     <Footer/>
