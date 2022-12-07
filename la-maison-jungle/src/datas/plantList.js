@@ -5,7 +5,7 @@ export const plantList = [
 		id: '1ed',
 		isBestSale: true,
 		isSpecialOffer : true,
-		water:1,
+		water:3,
 		light:1
 	},
 	{
@@ -14,7 +14,7 @@ export const plantList = [
 		id: '2ab',
 		isBestSale: true,
 		isSpecialOffer : false,
-		water:1,
+		water:2,
 		light:1
 	},
 	{
@@ -23,7 +23,7 @@ export const plantList = [
 		id: '3sd',
 		isBestSale: null,
 		isSpecialOffer : true,
-		water:1,
+		water:2,
 		light:2
 	},
 	{
@@ -32,7 +32,7 @@ export const plantList = [
 		id: '4kk',
 		isBestSale: false,
 		isSpecialOffer : true,
-		water:1,
+		water:2,
 		light:3
 	},
 	{
@@ -50,7 +50,7 @@ export const plantList = [
 		id: '6uo',
 		isBestSale: true,
 		isSpecialOffer : false,
-		water:1,
+		water:2,
 		light:1
 	},
 	{
