@@ -2,6 +2,7 @@
 import Banner from './Banner';
 import ShoppingList from './ShoppingList';
 import QuestionForm from './QuestionForm'
+import Footer from './Footer'
 //Importer image de assets
 import logo from '../assets/logo.png'
 //Importer le style CSS du fichier
@@ -17,6 +18,7 @@ function App() {
     {/* <Cart/> */}
     <ShoppingList/>
     <QuestionForm/>
+    <Footer/>
   </div>)
 }
 
