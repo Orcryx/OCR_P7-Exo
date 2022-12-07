@@ -30,7 +30,7 @@ function ShoppingList(){
 						<CareScale careType='water' scaleValue={plant.water}/>
 					</li>
 				))} */
-				plantList.map(({ id, cover, name, water, light }) => (<PlantItem id={id} cover={cover} name={name} water={water} light={light}/>))
+				plantList.map(({ id, cover, name, water, light }) => (<PlantItem key={id} cover={cover} name={name} water={water} light={light}/>))
 				}
 			</ul>
 		</div>

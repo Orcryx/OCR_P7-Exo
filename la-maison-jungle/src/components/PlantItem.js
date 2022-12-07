@@ -3,9 +3,14 @@ import '../styles/PlantItem.css'
 //importer un composant 
 import CareScale from './CareScale'
 
+function handleClick(){
+    console.log('Clic');
+}
+
+
 function PlantItem({id, cover, name, water, light}){
     return (
-        <li key={id} className='lmj-plant-item'>
+        <li key={id} className='lmj-plant-item' onClick={handleClick(name)}>
             <img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`}/>
             {name}
             <div>
