@@ -21,13 +21,13 @@ export const plantList = [
 		name: 'yucca',
 		category: 'classique',
 		id: '4kk',
-		isBestSale: true
+		isBestSale: false
 	},
 	{
 		name: 'olivier',
 		category: 'extérieur',
 		id: '5pl',
-		isBestSale: true
+		isBestSale: false
 	},
 	{
 		name: 'géranium',
