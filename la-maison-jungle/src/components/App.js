@@ -1,8 +1,9 @@
 //Importer les composants de l'application
 import Banner from './Banner';
-import logo from '../assets/logo.png'
-//import Cart from './Cart';
 import ShoppingList from './ShoppingList';
+import QuestionForm from './QuestionForm'
+//Importer image de assets
+import logo from '../assets/logo.png'
 //Importer le style CSS du fichier
 import '../styles/App.css';
 
@@ -15,6 +16,7 @@ function App() {
     </Banner>
     {/* <Cart/> */}
     <ShoppingList/>
+    <QuestionForm/>
   </div>)
 }
 
