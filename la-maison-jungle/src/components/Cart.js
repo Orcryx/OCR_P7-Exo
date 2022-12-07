@@ -24,6 +24,7 @@ function Cart() {
             <button onClick={() => updateCart(cart + 1)}> Ajouter</button>
         </div>
           <h3>Total : {monsteraPrice * cart} €</h3>
+          <button onClick={() => updateCart(0)}>Vider le panier</button>
         </div>) : (
            <button onClick={()=> setIsOpen(true)}>Ouvrir le panier</button>
         )
