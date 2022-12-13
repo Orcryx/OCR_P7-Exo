@@ -5,6 +5,8 @@ import Categories from './Categories';
 import '../styles/ShoppingList.css'
 //importer un composant
 import PlantItem from './PlantItem.js'
+//importer hook react
+import {useState} from 'react';
 
 /** Pour chaque élement dans la const PlantList, créer un élément li de la liste à puce ul cela en parcourant la liste avec la méthode map()
  * key : paramètre unique et à valeur stable dans le temps; ici créer avec une string et la combiner avec l'index de la data dans votre tableau map().
@@ -12,6 +14,8 @@ import PlantItem from './PlantItem.js'
  */
 
 function ShoppingList({ cart, updateCart }) {
+	
+	const [activeCategory, setActiveCategory] = useState('');
 	const categories = plantList.reduce(
 		(acc, plant) =>
 			acc.includes(plant.category) ? acc : acc.concat(plant.category),
@@ -35,11 +39,11 @@ function ShoppingList({ cart, updateCart }) {
 
 	return (
 		<div className='lmj-shopping-list'>
-			<ul>
-				{categories.map((cat) => (
-					<li key={cat}>{cat}</li>
-				))}
-			</ul>
+			<Categories 
+				categories={categories}
+				setActiveCategory={setActiveCategory}
+				activeCategory={activeCategory}
+			/>
 			<ul className='lmj-plant-list'>
 				{plantList.map(({ id, cover, name, water, light, price }) => (
 					<div key={id}>
