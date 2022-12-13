@@ -8,11 +8,15 @@ import Cart from './Cart';
 import logo from '../assets/logo.png';
 //Importer le style CSS du fichier
 import '../styles/App.css';
+import '../styles/Layout.css'
 // Importer la variable useState de React
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const [cart, updateCart] = useState([]);
+  //sauvegarder le panier en localSotage
+  const savedCart = localStorage.getItem('cart')
+  const [cart, updateCart] = useState( savedCart ? JSON.parse(savedCart) : []);
+  useEffect(()=>{localStorage.setItem('cart', JSON.stringify(cart))}, [cart])
   return (<div>
 
     <Banner>

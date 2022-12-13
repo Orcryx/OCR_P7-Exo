@@ -14,6 +14,7 @@ function Cart({ cart, updateCart }) {
 	// 	alert(`J'aurai ${total}€ à payer 💸`)
 	// }, [total])
 	useEffect(()=>{document.title =`LMJ : ${total}€ d'achat`}, [total])
+	//useEffect(()=>{document.title =`LMJ : ${total}€ d'achat`}, []) // s'active après le premier re-render car []
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
