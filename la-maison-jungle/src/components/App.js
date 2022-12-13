@@ -1,15 +1,15 @@
 //Importer les composants de l'application
 import Banner from './Banner';
 import ShoppingList from './ShoppingList';
-import QuestionForm from './QuestionForm'
-import Footer from './Footer'
+import QuestionForm from './QuestionForm';
+import Footer from './Footer';
 import Cart from './Cart';
 //Importer image de assets
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 //Importer le style CSS du fichier
 import '../styles/App.css';
 // Importer la variable useState de React
-import { useState } from 'react'
+import { useState } from 'react';
 
 function App() {
   const [cart, updateCart] = useState([]);

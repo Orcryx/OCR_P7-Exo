@@ -1,5 +1,6 @@
 //Importer le fichier avec la liste de données et pour le traitement en faire une variable
 import { plantList } from '../datas/plantList.js'
+import Categories from './Categories';
 //importer le style CSS
 import '../styles/ShoppingList.css'
 //importer un composant
